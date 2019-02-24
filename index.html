@@ -3,11 +3,12 @@
   <head>
     <meta charset="utf-8">
     <title>Archery Academy - Home</title>
-    <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+    <!-- <link rel="stylesheet" type="text/css" href="styles/stylesheet.css"> -->
     <!-- Adding the fontawesome stylesheet to use fontawesome icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <!-- Adding googlefont font and backup font -->
-    <!-- <style>
+
+    <!-- Commenting out fonts but keeping the code for use when styling<style>
       @import url('https://fonts.googleapis.com/css?family=Cabin|Karla|Molle:400i|Pacifico');
     </style> -->
   </head>
@@ -17,7 +18,7 @@
       <header id="heading">
         <h3 class="address">528 Nock Point Ln Tacoma, WA 98412 <a href="https://goo.gl/maps/66gCax6Nf832"><i class="fas fa-map-marker-alt"></i></a></h3>
         <h3 class="phone">(253)555-1010</h3>
-        <a href="index.html"><img src="images/archeryAcademy-logo-color.png"alt="Logo for Archery Academy with target and arrow."><i class="far fa-registered"></i> </a>
+        <a href="index.html"><img src="images/archeryAcademy-logo-color.png" alt="Logo for Archery Academy with target and arrow."><i class="far fa-registered"></i></a>
         <p>
           <a href="#" target="_blank"><i class="fab fa-facebook"></i></a> <a href="#" target="_blank"><i class="fab fa-twitter-square"></i></a> <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
         <p>
@@ -25,46 +26,53 @@
       </header>
     </article>
 
-    <!--This is the navigation-->
-    <ul>
-      <li class="navigation"><a class="active" href="index.html">Home |</a></li>
-      <li class="navigation"><a href="#" target="_blank">Services <i class="fas fa-caret-down"></i></a> |</li>
-        <ul class="dropdown">
-          <li><a href="classes.html">Classes</a></li>
-          <li><a href="#" target="_blank">Private Lessons</a></li>
-        </ul>
-      <li class="navigation"><a href="#" target="_blank">Instructors |</a></li>
-      <li class="navigation"><a href="#" target="_blank">About Archery Academy</a></li>
+    <!--This is the navigation including a sub-nav for Services-->
+    <nav>
+      <ul>
+        <li class="navigation"><a class="active" href="index.html">Home |</a></li>
+        <li class="navigation"><a href="#" target="_blank">Services <i class="fas fa-caret-down"></i></a> |
+          <ul class="dropdown">
+            <li><a href="classes.html">Classes</a></li>
+            <li><a href="#" target="_blank">Private Lessons</a></li>
+          </ul>
+        </li>
+        <li class="navigation"><a href="#" target="_blank">Instructors |</a></li>
+        <li class="navigation"><a href="#" target="_blank">About Archery Academy</a></li>
       </ul>
+    </nav>
 
     <section>
-      <header>
-        <h1>My Projects</h1>
-
-
-        <p>In taking the HTML & CSS class at the UW, I'm learning about semantic HTML and styling my page.</p>
-      </header>
-
-      <article>
-        <!-- Including fontawesome icon in h3 tag -->
-        <h3><i class="fab fa-canadian-maple-leaf"></i>What projects have I been working on lately?</h3>
-        <p>I have completed some codealongs, and a couple of full projects!</p>
+        <article class="what-is">
+        <h2>What is Straight to the Point Archery?</h2>
+        <p>Straight to the Point Archery is a non profit archery education center founded in 2005 by Giap Nguyen.  Our state of the art educational and training facility incorporates detailed technical video analysis combined with generations of archery experience from certified coaches and instructors.</p>
+        <p>Straight to the Point Archery is an indoor training facility with  28 shooting (14 -  10 yard lanes and 14 – 20 yard lanes) and 2 private coaching rooms. We also have access to 26  additional  20 yard lanes  and an outdoor shooting field.  We offer several types of lessons to accommodate everyone from the first time archer to the professional archer. Once set up with proper fitting equipment, each archer will be given the basic safety instruction to start and will be introduced to various shooting techniques.</p>
+        <p>Straight to the Point Archery has an excellent network of contacts with the USA Archery (USAA), Washington State Archery Association (WSAA), Washington State Bow Hunters (WSB), National Field Archery Association (NFAA) and many more national and state archery associations. These partnerships allow you to feel confident in our facility and staff.</p>
       </article>
 
       <aside>
-        <h4><i class="fas fa-code"></i> My work so far includes:</h4>
-          <ol>
-            <li><a href="https://github.com/georgeme/html-basics" target="_blank"><img src="images/HTML_image.PNG" width="100" height="85" alt="An image of a snippet of HTML code in the code editor Atom."> The HTML basics codealong</a></li>
-            <li><a href="https://github.com/georgeme/semantic-elements" target="_blank"><img src="images/semantic_website_image.jpg" width="100" height="85" alt="An image of a diagram of a semantic HTML Website."> Project 1 for Semantic Elements</a></li>
-            <li><a href="https://github.com/georgeme/portfolio" target="_blank"><img src="images/portfolio_image.jpg" width="100" height="85" alt="An image of an artist with their portfolio"> Project 2 for a Porfolio</a><em><small><strong> Note:</strong> The Portfolio project is ongoing so check out the changes!</small></em></li>
-          </ol>
+        <h2>Helping people meet their goals</h2>
+        <img src="images/instructor-bio-image4.png" alt="Instructor outside on field.">
+        <blockquote class="goals">
+          "I love it when one of my students tells me they won their competition, or earned their scholarship, or just had a great time! Whatever they want to accomplish, I want to help them get there!"
+        </blockquote>
+      </aside>
+
+      <aside>
+        <h3>Have questions? We'd love to hear from you!</h3>
+        <p>To learn more send us an email at: <a href="mailto:archery-education@example.com?subject=More%20information%20about%20Archery%20Academy">archery-education@example.com</a></p>
       </aside>
     </section>
 
     <footer>
-      <p class="footer-text"><em>Created January 2019</em></p>
-      <p class="footer-text"><em>This page will be udpated as more content is available. If you would like to learn a bit more about me, go to my <a href="about-me.html">About Me</a> page.</em></p>
-      <p>To learn more send us an email at: <a href="mailto:merloge@live.com?subject=More information about Straight to the Point Archery">archery-education@example.com</a></p>
+      <img src="images/footerImage.jpg" alt="Footer logo of arrow ends.">
+      <p><a href="index.html"><img src="images/archeryAcademy-logo-color.png" alt="Logo for Archery Academy with target and arrow."><i class="far fa-registered"></i></a></p>
+      <p>
+        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a> <a href="#" target="_blank"><i class="fab fa-twitter-square"></i></a> <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+      <p>
+      <a class="footer-link" href="#" target="_blank">Nondiscriminatory Policy |</a>
+      <a class="footer-link" href="#" target="_blank">Footer Link 2   |</a>
+      <a class="footer-link" href="#" target="_blank">Footer Link 3   |</a>
+      <p class="footer-copy">&copy; 2018 Archery Academy | Seattle, WA | Seattle, WA<p>
     </footer>
 
   </body>
