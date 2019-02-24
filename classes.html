@@ -3,71 +3,114 @@
   <head>
     <meta charset="utf-8">
     <title>Archery Academy - Classes</title>
-    <link rel="stylesheet" type="text/css" href="styles/stylesheet.css">
+    <!-- <link rel="stylesheet" type="text/css" href="styles/stylesheet.css"> -->
     <!-- Adding the fontawesome stylesheet to use fontawesome icons -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <!-- Adding googlefont font and backup font -->
+
+    <!-- Commenting out fonts but keeping the code as a reminder for use when styling
     <style>
       @import url('https://fonts.googleapis.com/css?family=Cabin|Karla|Molle:400i|Pacifico');
-    </style>
+    </style> -->
   </head>
+
   <body>
 
     <article>
       <header id="heading">
-        <h1 class="title">KITTIES TO GO!</h1>
-        <h3 class="sub-title">Seattle's premier drive-thru cat rentals</h3>
+        <h3 class="address">528 Nock Point Ln Tacoma, WA 98412 <a href="https://goo.gl/maps/66gCax6Nf832"><i class="fas fa-map-marker-alt"></i></a></h3>
+        <h3 class="phone">(253)555-1010</h3>
+        <a href="index.html"><img src="images/archeryAcademy-logo-color.png" alt="Logo for Archery Academy with target and arrow."></a>&reg;
+        <p>
+          <a href="#" target="_blank"><i class="fab fa-facebook"></i></a> <a href="#" target="_blank"><i class="fab fa-twitter-square"></i></a> <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+        <p>
+        <p>Straight to the Point Archery&reg;</p>
       </header>
     </article>
 
-    <!--This is the navigation-->
-    <ul>
-      <li class="navigation"><a href="index.html">My Projects</a></li>
-      <li class="navigation"><a class="active" href="about-me.html">About Me</a></li>
-    </ul>
+    <!--This is the navigation including a sub-nav for Services-->
+    <nav>
+      <ul>
+        <li class="navigation"><a href="index.html">Home |</a></li>
+        <li class="navigation"><a href="#" target="_blank">Services <i class="fas fa-caret-down"></i></a> |
+          <ul class="dropdown">
+            <li><a class="active" href="classes.html">Classes</a></li>
+            <li><a href="#" target="_blank">Private Lessons</a></li>
+          </ul>
+        </li>
+        <li class="navigation"><a href="#" target="_blank">Instructors |</a></li>
+        <li class="navigation"><a href="#" target="_blank">About Archery Academy</a></li>
+      </ul>
+    </nav>
 
     <section>
-      <header>
-        <h1>About Me</h1>
-        <p>Everything you wanted to know about me but were afraid to ask!</p>
-      </header>
-
-      <article>
-        <!-- Including fontawesome icon in h3 tag -->
-        <h3><i class="fab fa-canadian-maple-leaf"></i>Where do I call home?</h3>
-        <p>I've lived in the Seattle area since 1992. Prior to moving to the area, I lived in a suburb of Detroit, Michigan. I much prefer the winters in Seattle and overall the whole vibe here suits me much better. Fall is my favorite time of year I've been fortunate enough to live in places that have beautiful autumns.</p>
-      </article>
-
-      <article>
-        <!-- Including fontawesome icon in h3 tag -->
-        <h3><i class="fab fa-canadian-maple-leaf"></i>What do I do for a living?</h3>
-        <p>I have an extensive background in IT QA and was a department director. Right now I'm a Program Manager for a digital marketing company that provides Websites for automotive dealers.</p>
-        <p>I have been certified twice as a Scrum Master and have almost 20 years' experience in IT. I have a variety of other certifications including software testing, ITIL, and marketing certifications. I'm interested in expanding my career potential to include Web development.</p>
-        <p>If you would like to learn more about my professional experience, visit my <a href="https://www.linkedin.com/in/meredith-g-0a4b353/" target="_blank">LinkedIn profile</a><em><small><strong> Note:</strong> You may need to sign into LinkedIn to see my profile.</small></em>.
+      <article class="our-classes">
+        <h2>Our Classes</h2>
+        <p>From Beginner to Elite, archers of all ages and ability learn about this exciting Olympic and international sport. Sign up for a group lesson, private class, schedule a birthday or corporate party or compete at one of our many tournaments.  Straight to the Point Archery also offers homeschooling programs, kids club events, YMCA classes, Boy and Girl Scouts achievement programs and several other youth group activities. We are dedicated to teaching valuable life skills to the youth in our community through the wonderful discipline of archery.</p>
+        <p><a href="#" target="_blank">To learn more about Private Lessons, click here.</a><p>
       </article>
     </section>
 
-      <!--Creating an Aside to make it a flex container that can be positioned to the right-->
-      <aside class="flex-container">
-        <!-- Including fontawesome icon in h3 tag -->
-        <h3 class="favorite-h3"><i class="fab fa-canadian-maple-leaf"></i>What are my favorite things to do?</h3>
-        <p class="favorite-p">Some of my favorite things to do are:</p>
-          <ol class="favorite-ol">
-            <li><i class="fas fa-book"></i> Read</li>
-            <li><i class="fas fa-utensils"></i> Find new restaurants</li>
-            <li><i class="fas fa-film"></i> Watch movies</li>
-            <li><i class="fab fa-wpexplorer"></i> Explore new cities</li>
-            <li><i class="far fa-lightbulb"></i> Daydream</li>
-            <li><i class="fas fa-bed"></i> Take naps</li>
-          </ol>
-      </aside>
-      <!-- </article> -->
+    <section>
+      <article>
+        <h3>A101 Basic Archery</h3>
+        <ul>
+          <li>Basic archery course that focuses on beginning archery safety, skills, and drills. Participants learn about archery form, range rules and etiquette. Form training and fun games are introduced in this class. Equipment will be provided with exception of safety kit.</li>
+          <li>$120/month</li>
+          <li>Mondays and Wednesdays, 4-5 pm</li>
+          <li>Interest in learning about the sport of archery. Minimum age: 8 years old or 7 w/ pre-evaluation.</li>
+        </ul>
 
+          <aside>
+            <h4><a href="mailto:archery-education@example.com?subject=Enroll%20in%20A101%20Basic%20Archery&amp;body=Please%20enroll%20me%20in%20the%20class!">Enroll Now</a></h4>
+          </aside>
+      </article>
+    </section>
+
+    <section>
+      <article>
+        <h3>A102 Intermediate Archery</h3>
+        <ul>
+          <li>Intermediate archery course that focuses on intermediate archery safety, form, and introduces new equipment styles of shooting Recurve and Compound bows. Fun games and form reinforcement techniques are emphasized in this class. Equipment will be provided with exception of safety kit.</li>
+          <li>$120/month</li>
+          <li>Tuesdays and Thursdays, 4-5 pm</li>
+          <li>A101 or recommendation from private lesson instructor. Minimum age: 7 years old.</li>
+        </ul>
+
+          <aside>
+            <h4><a href="mailto:archery-education@example.com?subject=Enroll%20in%20A102%20Intermediate%20Archery&amp;body=Please%20enroll%20me%20in%20the%20class!">Enroll Now</a></h4>
+          </aside>
+      </article>
+    </section>
+
+    <section>
+      <article>
+        <h3>A103 Advanced Archery</h3>
+        <ul>
+          <li>After taking the A101, A102 classes, students are eligible to participate in the A103 class. This class focuses on a continued education towards tournament styles of shooting used by many archery tournament associations from around the world. Along with the tournament lesson, participants receive continued knowledge around their shooting form and advice on personal equipment selections. Equipment will be provided with exception of safety kit.</li>
+          <li>$120/month</li>
+          <li>Tuesdays and Thursdays, 5-6 pm</li>
+          <li>A101/A102 or equivalent. Minimum age: 7 years old.</li>
+        </ul>
+
+          <aside>
+            <h4><a href="mailto:archery-education@example.com?subject=Enroll%20in%20A103%20Advanced%20Archery&amp;body=Please%20enroll%20me%20in%20the%20class!">Enroll Now</a></h4>
+          </aside>
+      </article>
+    </section>
 
     <footer>
-      <p class="footer-text"><em>Created January 2019</em></p>
-      <p class="footer-text"><em>This page will be udpated as more content is available. If you would like to learn a bit more about the projects I'm working on for class, go to <a href="index.html">My Projects</a>.</em></p>
+      <img src="images/footerImage.jpg" alt="Footer logo of arrow ends.">
+      <p><a href="index.html"><img src="images/archeryAcademy-logo-color.png" alt="Logo for Archery Academy with target and arrow."></a>&reg;</p>
+      <p>
+        <a href="#" target="_blank"><i class="fab fa-facebook"></i></a> <a href="#" target="_blank"><i class="fab fa-twitter-square"></i></a> <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+      <p>
+      <a class="footer-link" href="#" target="_blank">Nondiscriminatory Policy |</a>
+      <a class="footer-link" href="#" target="_blank">Footer Link 2   |</a>
+      <a class="footer-link" href="#" target="_blank">Footer Link 3   </a>
+      <p class="footer-copy">&copy; 2018 Archery Academy | Seattle, WA | Seattle, WA<p>
     </footer>
 
   </body>
+
 </html>
