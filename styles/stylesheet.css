@@ -1,0 +1,219 @@
+*{
+	box-sizing: border-box;
+}
+
+/* Body text and border styling */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Header styling for font, background, placement */
+header {
+	height: 20em;
+	background-color: #03a3df;
+	color: white;
+  margin: 0;
+	padding: 5% 13%;
+}
+/* header h1 {
+  margin: 0;
+  font-size: 5em;
+} */
+header h3 {
+  margin: 0;
+	font-weight: 700;
+  font-size: 17px;
+}
+
+header p {
+  color: #ffffff;
+  font-size: 24px;
+  font-weight: 700;
+}
+
+/* H2 and H3 tag font size */
+h2 {
+  font-size: 24px;
+  font-weight: 700;
+}
+
+h3 {
+  font-size: 17px;
+  font-weight: 700;
+}
+
+/* Styling for social media in header and footer and map pin in header */
+.fa-facebook {
+  color: #ffffff;
+  font-size: 1em;
+}
+.fa-twitter-square {
+  color: #ffffff;
+  font-size: 1em;
+}
+.fa-instagram {
+  color: #ffffff;
+  font-size: 1em;
+}
+.fa-map-marker-alt {
+  color: #444444;
+  font-size: 1em;
+}
+
+#heading {
+  display: flex;
+	/* flex-direction: column;
+	justify-content: center; */
+}
+
+.what-is {
+  font-size: 24px:
+}
+
+/* Link color styling */
+a {
+  color: #444444;
+}
+
+/*Styling for navigation*/
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #444444;
+}
+
+.navigation {
+  float: left;
+}
+
+.navigation a {
+  display: block;
+  color: #ffffff;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  /* font-size: 17px; */
+}
+
+/* Test */
+li.navigation {
+  display: inline-block;
+}
+
+.dropdown {
+  display: none;
+  position: absolute;
+  background-color: #444444;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown a:hover:not(.active) {
+  background-color: #03a3df;
+}
+
+.navigation:hover .dropdown {
+  display: block;
+}
+/* End Test */
+.navigation a:link {
+  color: #ffffff;
+}
+
+.navigation a:visited {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.navigation {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.navigation a:hover:not(.active) {
+  background-color: #03a3df;
+}
+
+.active {
+  background-color: #ecb722;
+}
+
+.navigation {
+  border-right: 2px solid #ffffff;
+}
+
+/* Last child no right border */
+.navigation:last-child {
+  border-right: none;
+}
+
+/* Left-side text styling for positioning, text, etc. */
+/* section {
+	width:51%;
+	margin-right:1%;
+	padding-left: 13%;
+	float:left;
+}
+section h5 {
+	color: #008fb3;
+  font-size: 1em;
+	font-weight: lighter;
+}
+
+.first-h5 {
+    font-weight: bold;
+		padding-top: 5%;
+} */
+
+/* ul {
+list-style-type: none;
+	padding-top: 2%;
+	padding-bottom: 10%;
+
+} */
+
+/* Right-side styling for text, image, positioning */
+/* .right {
+	width:20%;
+	float:left;
+	display:inline-block;
+	margin-right:5%;
+} */
+
+
+
+/* Footer styling for background, text, positioning, links */
+footer {
+	clear:both;
+}
+
+/* #footer-site {
+  display: flex;
+  align-items: center;
+	flex-direction: column;
+} */
+
+footer {
+  background-image: url("../images/footerImage.jpg");
+  background-size: cover;
+}
+.footer-link {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* .footer-p {
+	width: 37%;
+	text-align: center;
+} */
