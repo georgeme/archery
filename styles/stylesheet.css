@@ -8,17 +8,25 @@ body {
 }
 
 /* Header styling for font, background, placement */
-header {
+#header {
 	height: 20em;
+	width: auto;
+	display: flex;
+	justify-content: space-between;
 	background-color: #03a3df;
 	color: white;
   margin: 0;
-	padding: 5% 13%;
+	padding: 5% 5%;
 }
-/* header h1 {
-  margin: 0;
-  font-size: 5em;
-} */
+
+#left-header {
+	width: 40%
+}
+
+#right-header {
+	width: 40%
+}
+
 header h3 {
   margin: 0;
 	font-weight: 700;
@@ -60,11 +68,7 @@ h3 {
   font-size: 1em;
 }
 
-#heading {
-  display: flex;
-	/* flex-direction: column;
-	justify-content: center; */
-}
+
 
 .what-is {
   font-size: 24px:
