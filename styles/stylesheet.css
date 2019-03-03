@@ -81,7 +81,7 @@ nav ul {
   display: block;
   color: #ffffff;
   text-align: center;
-  padding: 14px 16px;
+  padding: 1em 1em;
   text-decoration: none;
 }
 
@@ -93,13 +93,12 @@ li.navigation {
   display: none;
   position: absolute;
   background-color: #444444;
-  min-width: 160px;
+  min-width: 3em;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   z-index: 1;
 }
 
 .dropdown a {
-  color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -147,6 +146,67 @@ li.navigation {
 /* Link color styling */
 a {
   color: #444444;
+}
+
+/* Grid styling for index page */
+.grid-container-index {
+	display: grid;
+	grid-column-gap: 3em;
+}
+
+.grid-container-index {
+	grid-template-columns: 50% 40%;
+  grid-template-rows: auto auto auto auto;
+}
+
+.what-is {
+	grid-column-start: 1;
+  grid-column-end: 1;
+  grid-row-start: 1;
+  grid-row-end: 2;
+	padding: 1% 1%;
+}
+
+.quote {
+	grid-column-start: 2;
+  grid-column-end: 2;
+  grid-row-start: 1;
+  grid-row-end: 2;
+	border-style: inset;
+	border-color: #03a3df;
+	border-width: 2em;
+	justify-content: space-between;
+	text-align: center;
+	padding: 1% 1%;
+	margin-top: 2em;
+}
+
+.goals {
+	color: #03a3df;
+	font-weight: 700;
+}
+
+.contact {
+	grid-column-start: 1;
+  grid-column-end: 1;
+ 	grid-row-start: 2;
+  grid-row-end: 3;
+	border-style: inset;
+	border-color: #ecb722;
+	text-align: center;
+ 	padding: 1% 1%;
+	margin-bottom: 1em;
+}
+
+.contact a {
+  background-color: #1b447f;
+  color: #ffffff;
+	font-weight: 700;
+  padding: 1em 1em;
+	border-radius: 10%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
 }
 
 /* Footer styling for background, text, positioning, links, etc. */
