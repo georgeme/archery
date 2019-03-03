@@ -112,7 +112,7 @@ li.navigation {
 .navigation:hover .dropdown {
   display: block;
 }
-/* End Test */
+
 .navigation a:link {
   color: #ffffff;
 }
