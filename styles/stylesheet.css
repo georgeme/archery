@@ -81,18 +81,22 @@ h3 {
 .fa-facebook {
   color: #ffffff;
   font-size: 1em;
+	margin: .5em;
 }
 .fa-twitter-square {
   color: #ffffff;
   font-size: 1em;
+	margin: .5em;
 }
 .fa-instagram {
   color: #ffffff;
   font-size: 1em;
+	margin: .5em;
 }
 .fa-map-marker-alt {
   color: #444444;
   font-size: 1em;
+	margin: .5em;
 }
 
 /*Styling for navigation*/
@@ -111,6 +115,7 @@ nav ul {
 .navigation a {
   display: block;
   color: #ffffff;
+	font-weight: 700;
   text-align: center;
   padding: 1em 1em;
   text-decoration: none;
@@ -164,10 +169,17 @@ li.navigation {
 
 .navigation a:hover:not(.active) {
   background-color: #03a3df;
+	color: #000000;
 }
 
-.active {
+.navigation a:focus {
+  background-color: #03a3df;
+	color: #000000;
+}
+
+#active {
   background-color: #ecb722;
+	color: #000000;
 }
 
 .navigation {
@@ -262,6 +274,33 @@ a {
 .contact a {
   background-color: #1b447f;
   color: #ffffff;
+	font-weight: 700;
+  padding: 1em 1em;
+	border-radius: 10%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+	border: solid;
+	border-color: #1b447f;
+}
+
+/* Changing background color and font color for Learn More button index page */
+.contact a:hover:not(.active){
+  background-color: #ecb722;
+  color: #000000;
+	font-weight: 700;
+  padding: 1em 1em;
+	border-radius: 10%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+	border: solid;
+	border-color: #1b447f;
+}
+
+.contact a:focus{
+  background-color: #ecb722;
+  color: #000000;
 	font-weight: 700;
   padding: 1em 1em;
 	border-radius: 10%;
@@ -367,6 +406,32 @@ a {
   display: inline-block;
 }
 
+.a101-enroll a:hover:not(.active){
+  background-color: #ecb722;
+  color: #000000;
+	font-weight: 700;
+  padding: 1em 1em;
+	border-radius: 10%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+	border: solid;
+	border-color: #1b447f;
+}
+
+.a101-enroll a:focus{
+  background-color: #ecb722;
+  color: #000000;
+	font-weight: 700;
+  padding: 1em 1em;
+	border-radius: 10%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+	border: solid;
+	border-color: #1b447f;
+}
+
 .a102 {
 	display: grid;
 	border-style: inset;
@@ -437,6 +502,32 @@ a {
   text-align: center;
   text-decoration: none;
   display: inline-block;
+}
+
+.a102-enroll a:hover:not(.active){
+  background-color: #ecb722;
+  color: #000000;
+	font-weight: 700;
+  padding: 1em 1em;
+	border-radius: 10%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+	border: solid;
+	border-color: #1b447f;
+}
+
+.a102-enroll a:focus{
+  background-color: #ecb722;
+  color: #000000;
+	font-weight: 700;
+  padding: 1em 1em;
+	border-radius: 10%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+	border: solid;
+	border-color: #1b447f;
 }
 
 .a103 {
@@ -510,6 +601,32 @@ a {
   text-align: center;
   text-decoration: none;
   display: inline-block;
+}
+
+.a103-enroll a:hover:not(.active){
+  background-color: #ecb722;
+  color: #000000;
+	font-weight: 700;
+  padding: 1em 1em;
+	border-radius: 10%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+	border: solid;
+	border-color: #1b447f;
+}
+
+.a103-enroll a:focus{
+  background-color: #ecb722;
+  color: #000000;
+	font-weight: 700;
+  padding: 1em 1em;
+	border-radius: 10%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+	border: solid;
+	border-color: #1b447f;
 }
 
 /* Footer styling for background, text, positioning, links, etc. */
