@@ -10,6 +10,16 @@ White (#ffffff)
 Grey in nav and map point (#444444)
 Black (#000000) */
 
+/* Ensuring screen-reader only content will not display on the page */
+.sr-only {
+  position: absolute;
+  left: -1000px;
+  top: auto;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+}
+
 /* Styling the skip link on each page */
 .hidden {
   position: relative;
@@ -111,7 +121,7 @@ li.navigation {
 }
 
 .dropdown {
-  display: none;
+  visibility: hidden;
   position: absolute;
   background-color: #444444;
   min-width: 3em;
@@ -131,7 +141,12 @@ li.navigation {
 }
 
 .navigation:hover .dropdown {
-  display: block;
+  visibility: visible;
+}
+
+/* Added to allow screen reader to read when in focus */
+.navigation:focus-within .dropdown {
+  visibility: visible;
 }
 
 .navigation a:link {
