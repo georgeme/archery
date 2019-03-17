@@ -2,6 +2,27 @@
 	box-sizing: border-box;
 }
 
+/* ***Colors used in styling site:***
+Blue in header, nav, and borders (#03a3df)
+Dark Blue for Enroll Now CTAs (#1b447f)
+Yellow (#ecb722)
+White (#ffffff)
+Grey in nav and map point (#444444)
+Black (#000000) */
+
+/* Styling the skip link on each page */
+.hidden {
+  position: relative;
+  left: -10000px;
+  top: auto;
+}
+
+.hidden:focus {
+  left: 0;
+	color: #000000;
+	font-weight: 700;
+}
+
 /* Body text styling */
 body {
   font-family: Arial, Helvetica, sans-serif;
