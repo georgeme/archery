@@ -125,8 +125,9 @@ li.navigation {
   display: inline-block;
 }
 
-.dropdown {
-  visibility: hidden;
+/* Commenting out the "dropdown" styling for now. Maybe I'll learn a way to add opening the dropdown nav items in the next course so keeping this */
+/* .dropdown {
+  display: none;
   position: absolute;
   background-color: #444444;
   min-width: 3em;
@@ -142,17 +143,13 @@ li.navigation {
 }
 
 .dropdown a:hover:not(.active) {
+	display: block;
   background-color: #03a3df;
 }
 
 .navigation:hover .dropdown {
-  visibility: visible;
-}
-
-/* Added to allow screen reader to read when in focus */
-.navigation:focus-within .dropdown {
-  visibility: visible;
-}
+  display: block;
+} */
 
 .navigation a:link {
   color: #ffffff;
@@ -280,12 +277,10 @@ a {
   text-align: center;
   text-decoration: none;
   display: inline-block;
-	border: solid;
-	border-color: #1b447f;
 }
 
 /* Changing background color and font color for Learn More button index page */
-.contact a:hover:not(.active){
+.contact a:hover{
   background-color: #ecb722;
   color: #000000;
 	font-weight: 700;
